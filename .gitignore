@@ -1,0 +1,21 @@
+# UiPath system folders
+.entities/
+.objects/
+.project/
+.settings/
+.screenshots/
+
+# Temporary / old
+OLD/
+*.tmp
+
+# Packages
+*.nupkg
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+

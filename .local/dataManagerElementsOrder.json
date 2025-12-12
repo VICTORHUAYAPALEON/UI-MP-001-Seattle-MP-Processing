@@ -1,0 +1,392 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP 8. LLENA COLUMNA SE ESCANEO ULTIMA REV EXCEL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DataTableExcel&Sequence_1",
+        "ValorSEESCANEOULTIMAREVISION&Sequence_1",
+        "Columna1&Sequence_1",
+        "CurrentRowIndex&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "PlanoOListaFormado&Sequence_1",
+        "PrimerStringPDF&Sequence_1",
+        "StartTime&Sequence_1",
+        "EndTime1&Sequence_1",
+        "TimeTaken1&Sequence_1",
+        "EndTime2&Sequence_1",
+        "TimeTaken2&Sequence_1",
+        "IndexInicial&Sequence_1",
+        "DataTableExcelText&Sequence_2",
+        "TimeTakenExcel&Sequence_2",
+        "EndTimeExcel&Sequence_2",
+        "EndTimeExcel2&Sequence_2",
+        "CuentaDiv&Sequence_2",
+        "variable1&Sequence_4",
+        "DataTableExcelTotal&Sequence_4",
+        "DataTableExcelTot&Sequence_4",
+        "LimSuperior&Sequence_77",
+        "LimInferior&Sequence_77",
+        "StartTimeRange&Sequence_77",
+        "EndTimeRange&Sequence_77",
+        "TimeTakenRange&Sequence_77",
+        "StartTimeExcel&Sequence_59",
+        "NombreArchivoPDF&Sequence_60",
+        "CaracterMPDF&Sequence_60",
+        "CaracterySiguienteNombrePDF&Sequence_60",
+        "NumeroPDF&Sequence_60",
+        "ListOfMatches&Sequence_60"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SEATTLE 2. CAMBIA NOMBRE HOJA PDF A NUM + REV 2NUMERO Y REV.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TextPDF&Sequence_1",
+        "PatronDibujoRev&Sequence_1",
+        "Numero&Sequence_1",
+        "NumeroPaginasPDF&Sequence_1",
+        "EsCorrecto&Sequence_1",
+        "NombrePDF&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "ListaStrings&Sequence_1",
+        "NuevoNombre&Sequence_1",
+        "Valor&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP 2. CAMBIA NOMBRE HOJA PDF A NUM + REV 2NUMERO Y REV.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TextPDF&Sequence_1",
+        "PatronDibujoRev&Sequence_1",
+        "Numero&Sequence_1",
+        "NumeroPaginasPDF&Sequence_1",
+        "EsCorrecto&Sequence_1",
+        "NombrePDF&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "ListaStrings&Sequence_1",
+        "NuevoNombre&Sequence_1",
+        "Valor&Sequence_1",
+        "NumeroDeLista&Sequence_10",
+        "Revision&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP  EXTRAE IMAGENES PREL Y ARMA EXCEL PREL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ListaTMPNum&Sequence_43",
+        "DTTMPNum&Sequence_43",
+        "ListaDescripcion&Sequence_43",
+        "CurrentIndex&Sequence_43",
+        "Descripcion&Sequence_20",
+        "FolderPathSalidaPrel&Sequence_1",
+        "FolderPathImagenCropPrel&Sequence_14",
+        "NroFilas&Sequence_21",
+        "tamanho&Sequence_1",
+        "Numero&Sequence_1",
+        "variable1&Sequence_20",
+        "FolderPathSalida&Sequence_1",
+        "FolderPathImagenCrop&Sequence_1",
+        "ObjAltura&Sequence_15",
+        "Index&Sequence_14",
+        "ObjImageProperties&Sequence_14",
+        "FolderPathImagen&Sequence_14",
+        "Imagenes&Sequence_14",
+        "TextPDF&Sequence_1",
+        "FolderPathEntrada&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "PRUEBA.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FolderPathImagenes&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP  EXTRAE IMAGENES DEF Y ARMA EXCEL DEF.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TituloPrel&Sequence_14",
+        "tamanho&Sequence_14",
+        "Numero&Sequence_14",
+        "CurrentIndex&Sequence_13",
+        "ListaTituloPrel&Sequence_1",
+        "DTTituloPrel&Sequence_13",
+        "TextPDF&Sequence_13",
+        "variable1&Sequence_14",
+        "NroFilas&Sequence_15",
+        "CropLeft&Sequence_1",
+        "CropTop&Sequence_1",
+        "DTTMPNumTEXT&Sequence_2",
+        "FolderPathSalidaDef&Sequence_1",
+        "FolderPathImagen&Sequence_3",
+        "FolderPathImagenCropDef&Sequence_1",
+        "TamanhoPlano&Sequence_3",
+        "DTTMPNum&Sequence_1",
+        "FolderPathContenedorImagen&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "Imagenes&Sequence_3",
+        "ObjImageProperties&Sequence_3",
+        "Index&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FolderPathDeteccion&Sequence_1",
+        "FolderPathBorrar&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "FolderPathSalidaDef&Sequence_1",
+        "TextPDF&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP LIMPIA CARPETAS A USAR.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DTDirecciones&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "5. LLEVA DE 3COMPLETO A LISTAS O PLANOS TOTAL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FolderPathEntrada&Sequence_1",
+        "Valor&Sequence_1",
+        "DTFolders&Sequence_1",
+        "FolderPathSalida&Sequence_1",
+        "FolderPath3COMPLETO&Sequence_2",
+        "PrimerStringPDF1&Sequence_14",
+        "NombreArchivoPDF1&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP 6. MISMA REV LLEVA DE TOTAL A MP.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NombreArchivoPDF&Sequence_1",
+        "NombreArchivoPDF2&Sequence_1",
+        "RevArchivoPDF2Mod&Sequence_1",
+        "Temp&Sequence_1",
+        "Valor&Sequence_1",
+        "NumeroPlanoPDF&Sequence_1",
+        "PrimerStringPDF&Sequence_1",
+        "ListaMyNumeroPDF&Sequence_1",
+        "PrimerStringPDF2&Sequence_1",
+        "NumeroPlanoPDF2&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "DT&Sequence_1",
+        "FolderPathSalida&Sequence_1",
+        "DTtext&Sequence_1",
+        "NombreArchivoPDFUnido&Sequence_1",
+        "ListaPDFsUnir&Sequence_1",
+        "bandera&Sequence_1",
+        "bandera2&Sequence_1",
+        "PrimerStringPDFDiv&Sequence_16",
+        "PrimerStringPDF2Div&Sequence_59",
+        "ListaMyNumeroPDF2&Sequence_44"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "MP 4. LLEVA A 3COMPLETO.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NumeroPlanoExcel&Sequence_1",
+        "TablaPlanos5Hojas&Sequence_1",
+        "NumeroFilas&Sequence_1",
+        "NumeroPlanoPDF1&Sequence_1",
+        "NombreArchivoPDF1&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "ListaMyNumeroPDF&Sequence_1",
+        "NumeroCaracteres&Sequence_1",
+        "PrimerStringPDF1&Sequence_1",
+        "Valor&Sequence_1",
+        "variable1&Sequence_1",
+        "NombreArchivoPDF2&Sequence_1",
+        "TituloPlanoExcel&Sequence_1",
+        "FolderPathSalida&Sequence_7",
+        "PrimerStringPDFDiv&Sequence_13"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "CAMBIA HOJA X AL FORMATO 3COMPLETO SEGUN EXCEL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TablaLDMyPlanos&Sequence_1",
+        "DescripcionExcel&Sequence_8",
+        "NewName&Sequence_39",
+        "CurrentIndexDT&Sequence_7",
+        "EsRepetido&Sequence_8",
+        "RevExcel&Sequence_8",
+        "TituloExcel&Sequence_8",
+        "NumeroExcel&Sequence_8",
+        "TamanhoExcel&Sequence_8",
+        "CurrentFile&Sequence_8",
+        "NumeroFilas&Sequence_1",
+        "NumeroPlanoPDF1&Sequence_1",
+        "NombreArchivoPDF1&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "ListaMyNumeroPDF&Sequence_1",
+        "NumeroCaracteres&Sequence_1",
+        "PrimerStringPDF1&Sequence_1",
+        "Valor&Sequence_1",
+        "NombreArchivoPDF2&Sequence_1",
+        "TituloPlanoExcel&Sequence_1",
+        "FolderPathSalida&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SEATTLE 1. SEPARA PDF EN HOJAS INDIVIDUALES.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TextPDF&Sequence_1",
+        "PatronDibujoRev&Sequence_1",
+        "Numero&Sequence_1",
+        "NumeroPaginasPDF&Sequence_1",
+        "EsCorrecto&Sequence_1",
+        "NombrePDF&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "FolderPathSalida&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SEATTLE 6. MISMA REV LLEVA DE TOTAL A SEATTLE.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NombreArchivoPDF&Sequence_1",
+        "NombreArchivoPDF2&Sequence_1",
+        "RevArchivoPDF2Mod&Sequence_1",
+        "Temp&Sequence_1",
+        "Valor&Sequence_1",
+        "NumeroPlanoPDF&Sequence_1",
+        "PrimerStringPDF&Sequence_1",
+        "ListaMyNumeroPDF&Sequence_1",
+        "PrimerStringPDF2&Sequence_1",
+        "NumeroPlanoPDF2&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "DT&Sequence_1",
+        "FolderPathSalida&Sequence_1",
+        "DTtext&Sequence_1",
+        "NombreArchivoPDFUnido&Sequence_1",
+        "ListaPDFsUnir&Sequence_1",
+        "bandera&Sequence_1",
+        "bandera2&Sequence_1",
+        "ListaMyNumeroPDF2&Sequence_44"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "RENOMBRA HOJA AL FORMATO 3COMPLETO SEGUN EXCEL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TituloExcel&Sequence_1",
+        "NumeroExcel&Sequence_1",
+        "TamanhoExcel&Sequence_1",
+        "CurrentFile&Sequence_1",
+        "TipoDoc&Sequence_1",
+        "NewName&Sequence_1",
+        "Cadena&Sequence_1",
+        "DT&Sequence_1",
+        "TablaPlanos5Hojas&Sequence_1",
+        "FolderPathEntrada&Sequence_1",
+        "TituloPlanoExcel&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UI-MP-001-11 Seattle Split PDF Pages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UI-MP-001-12 Seattle Rename Based on Excel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UI-MP-001-13 Seattle Merge Revision Pages.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "UI-MP-001-14 Seattle Move to 3COMPLETO.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

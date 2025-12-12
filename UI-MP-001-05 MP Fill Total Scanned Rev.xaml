@@ -1,0 +1,890 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1028,16001" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>System.Windows.Documents</x:String>
+      <x:String>System.Windows.Media.Animation</x:String>
+      <x:String>System.Windows</x:String>
+      <x:String>System.Windows.Threading</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>PresentationUI</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Windows.Presentation</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1038,15936" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="NumeroPlanoPDF" />
+      <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="NombreArchivoPDF" />
+      <Variable x:TypeArguments="x:Int32" Name="IndexRevAdicionales" />
+      <Variable x:TypeArguments="x:Object" Name="i" />
+      <Variable x:TypeArguments="x:String" Name="RevAdicionalesPDF" />
+      <Variable x:TypeArguments="x:Boolean" Name="Bandera" />
+      <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="Temp" />
+      <Variable x:TypeArguments="x:Int32" Name="CurrentRowIndex" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTSEESCANEOULTIMAREVISION_TODOFILAS" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTSEESCANEOULTIMAREVISION" />
+      <Variable x:TypeArguments="x:String" Name="FolderPathEntrada" />
+      <Variable x:TypeArguments="x:String" Name="PrimerStringPDF" />
+      <Variable x:TypeArguments="x:String" Name="DTPrimerStringyRevTotalesPDFsal" />
+      <Variable x:TypeArguments="x:String" Name="RevTotalesPDF" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTPrimerStringyRevUnicaPDF" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTPrimerStringyRevAdicionalesPDF" />
+      <Variable x:TypeArguments="s:DateTime" Name="StartTime" />
+      <Variable x:TypeArguments="s:DateTime" Name="EndTime2" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="TimeTaken2" />
+      <Variable x:TypeArguments="x:String" Name="DTPrimerStringyRevAdicionalesPDFsal" />
+      <Variable x:TypeArguments="x:String" Name="DTNumeroyRevAdicionalesPDFsal" />
+      <Variable x:TypeArguments="x:String" Name="DTPrimerStringyRevUnicaPDFsal" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTPrimerStringyRevTotalesPDF" />
+      <Variable x:TypeArguments="s:DateTime" Name="EndTime1" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="TimeTaken1" />
+      <Variable x:TypeArguments="x:String" Name="PlanoOListaFormadoExcel" />
+      <Variable x:TypeArguments="s:DateTime" Name="StartTimeRange" />
+      <Variable x:TypeArguments="s:DateTime" Name="EndTimeRange" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="TimeTakenRange" />
+      <Variable x:TypeArguments="x:TimeSpan" Name="TimeTakenExcel" />
+      <Variable x:TypeArguments="s:DateTime" Name="EndTimeExcel" />
+      <Variable x:TypeArguments="s:DateTime" Name="StartTimeExcel" />
+      <Variable x:TypeArguments="x:Int32" Name="LimSuperior" />
+      <Variable x:TypeArguments="x:Int32" Name="LimInferior" />
+      <Variable x:TypeArguments="x:String" Name="DTPrimerStringyRevTotalesOrdenPDFsal" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DTPrimerStringyRevTotalesOrdenPDF" />
+      <Variable x:TypeArguments="x:Int32" Name="IndexInicial" />
+      <Variable x:TypeArguments="x:String" Name="RevUnicaPDF" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="976,279" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="INGRESA FOLDERPATH ENTRADA" Title="INGRESA FOLDERPATH ENTRADA">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[FolderPathEntrada]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign sap:VirtualizedContainerService.HintSize="976,122" sap2010:WorkflowViewState.IdRef="Assign_35">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[StartTime]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="Sequence CONSTRUYE TABLA CON NRO Y REVISION DEL PDF" sap:VirtualizedContainerService.HintSize="976,3651" sap2010:WorkflowViewState.IdRef="Sequence_58">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BuildDataTable DataTable="[DTPrimerStringyRevUnicaPDF]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="880,100" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;PrimerStringPDF&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;RevisionPDF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[FolderPathEntrada]" sap:VirtualizedContainerService.HintSize="880,2591" sap2010:WorkflowViewState.IdRef="ForEachFileX_3" IncludeSubDirectories="False" OrderBy="NameDescFirst" SkipFolderWithoutPermission="False">
+        <ui:ForEachFileX.Body>
+          <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+            <ActivityAction.Argument1>
+              <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+            </ActivityAction.Argument1>
+            <ActivityAction.Argument2>
+              <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+            </ActivityAction.Argument2>
+            <Sequence sap:VirtualizedContainerService.HintSize="846,2293" sap2010:WorkflowViewState.IdRef="Sequence_59">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence sap:VirtualizedContainerService.HintSize="784,2208" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uast:SplitText DisplayName="Split Text" sap:VirtualizedContainerService.HintSize="722,231" sap2010:WorkflowViewState.IdRef="SplitText_3" Result="[PrimerStringPDF]" Results="[NombreArchivoPDF]" Separator="Space" SeparatorKey="Space" Source="[CurrentFile.Name]" />
+                <If Condition="[NombreArchivoPDF.Last.ToString =&quot;revSIN.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revSIN2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revNOIND.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revNOIND2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revA2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revB2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revC2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revD2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revE2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revF2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revG2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revH2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revI2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revJ2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revK2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revL2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revM2.pdf&quot;]" sap:VirtualizedContainerService.HintSize="722,1340" sap2010:WorkflowViewState.IdRef="If_22">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,972" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If Condition="[NombreArchivoPDF.Last.ToString =&quot;revSIN.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revSIN2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revNOIND.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revNOIND2.pdf&quot;]" sap:VirtualizedContainerService.HintSize="626,887" sap2010:WorkflowViewState.IdRef="If_23">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_56">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[RevUnicaPDF]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">NO INDICA</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="592,536" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[NombreArchivoPDF.Last.ToString =&quot;revA2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revB2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revC2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revD2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revE2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revF2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revG2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revH2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revI2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revJ2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revK2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revL2.pdf&quot;  or NombreArchivoPDF.Last.ToString =&quot;revM2.pdf&quot; or NombreArchivoPDF.Last.ToString =&quot;revN2.pdf&quot;]" sap:VirtualizedContainerService.HintSize="530,451" sap2010:WorkflowViewState.IdRef="If_24">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[RevUnicaPDF]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[NombreArchivoPDF.Last.ToString.Remove(4,5).Remove(0,3)]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_90">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_58">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[RevUnicaPDF]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[NombreArchivoPDF.Last.ToString.Remove(4,4).Remove(0,3)]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="722,317" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="WriteLine_28" Text="[&quot;NOS ENCONTRAMOS EN: &quot; + PrimerStringPDF.ToString+&quot; &quot; +RevUnicaPDF]" />
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{PrimerStringPDF,RevUnicaPDF}]" DataTable="[DTPrimerStringyRevUnicaPDF]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="722,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachFileX.Body>
+      </ui:ForEachFileX>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="880,749" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="514,630" sap2010:WorkflowViewState.IdRef="Sequence_72">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:OutputDataTable DataTable="[DTPrimerStringyRevUnicaPDF]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[DTPrimerStringyRevUnicaPDFsal]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,130" sap2010:WorkflowViewState.IdRef="WriteLine_11" Text="[DTPrimerStringyRevUnicaPDFsal]" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,295" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;TABLA CON NRO Y REVISION UNICA PDF&quot;]" />
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <ui:BuildDataTable DataTable="[DTPrimerStringyRevTotalesPDF]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="880,83" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;PrimerStringPDF&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;RevisionesPDF&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    </Sequence>
+    <Sequence DisplayName="Sequence SE ARMA LA TABLA CON NUMERO DE PLANO Y REVISIONES TOTALES" sap:VirtualizedContainerService.HintSize="976,4001" sap2010:WorkflowViewState.IdRef="Sequence_61">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTPrimerStringyRevUnicaPDF]" DisplayName="For Each Row in Data Table SE ARMA LA TABLA CON NUMERO DE PLANO Y REVISIONES TOTALES" sap:VirtualizedContainerService.HintSize="818,3515" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow1" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="784,3311" sap2010:WorkflowViewState.IdRef="Sequence_23">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTPrimerStringyRevTotalesPDF]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="722,1427" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow3" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="610,1223" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="548,122" sap2010:WorkflowViewState.IdRef="Assign_33">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[Bandera]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[CurrentRow3.Item(0).ToString=CurrentRow1.Item(0).ToString]" sap:VirtualizedContainerService.HintSize="548,468" sap2010:WorkflowViewState.IdRef="If_20">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_34">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[Bandera]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="548,548" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,446" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[DTPrimerStringyRevTotalesPDF.RowCount &lt;&gt;0]" sap:VirtualizedContainerService.HintSize="450,361" sap2010:WorkflowViewState.IdRef="If_19">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="722,130" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[&quot;PARA PLANO O LISTA &quot;+CurrentRow1.Item(0).ToString+&quot; BANDERA= &quot;+Bandera.ToString]" />
+              <Assign sap:VirtualizedContainerService.HintSize="722,122" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[RevTotalesPDF]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[Bandera= False]" sap:VirtualizedContainerService.HintSize="722,1434" sap2010:WorkflowViewState.IdRef="If_10">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="688,1156" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTPrimerStringyRevUnicaPDF]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="626,862" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow2" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,658" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If Condition="[CurrentRow1.Item(0).ToString = CurrentRow2.Item(0).ToString]" sap:VirtualizedContainerService.HintSize="530,468" sap2010:WorkflowViewState.IdRef="If_11">
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:String">[RevTotalesPDF]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:String">[RevTotalesPDF+CurrentRow2.Item(1).ToString+","]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <Assign sap:VirtualizedContainerService.HintSize="530,105" sap2010:WorkflowViewState.IdRef="Assign_18">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Object">[DTPrimerStringyRevTotalesPDF.NewRow().Item(0)]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Object">[CurrentRow1.Item(0).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow1.Item(0).ToString,RevTotalesPDF}]" DataTable="[DTPrimerStringyRevTotalesPDF]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="626,209" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="722,113" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[&quot;PARA EL PRIMER STRING &quot;+CurrentRow1.Item(0).ToString+&quot; LAS REVISIONES SON &quot;+RevTotalesPDF+&quot; Y EL NUMERO DE FILAS EN LA TABLA ES &quot;+DTPrimerStringyRevTotalesPDF.RowCount.ToString]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+      </ui:ForEachRow>
+      <ui:OutputDataTable DataTable="[DTPrimerStringyRevTotalesPDF]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="818,120" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[DTPrimerStringyRevTotalesPDFsal]" />
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="818,130" sap2010:WorkflowViewState.IdRef="WriteLine_12" Text="[DTPrimerStringyRevTotalesPDFsal]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="818,108" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;TABLA CON NRO Y REVISIONES TOTALES PDF&quot;]" />
+    </Sequence>
+    <Assign sap:VirtualizedContainerService.HintSize="976,122" sap2010:WorkflowViewState.IdRef="Assign_36">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[EndTime1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="976,122" sap2010:WorkflowViewState.IdRef="Assign_37">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:TimeSpan">[TimeTaken1]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:TimeSpan">[EndTime1-StartTime]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="976,312" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_84">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[TimeTaken1.TotalMinutes.ToString]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <Sequence DisplayName="Sequence SE ESCRIBE LAS REVISIONES TOTALES EN EL EXCEL" sap:VirtualizedContainerService.HintSize="976,7239" sap2010:WorkflowViewState.IdRef="Sequence_47">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File SE ESCRIBE LAS REVISIONES TOTALES EN EL EXCEL" sap:VirtualizedContainerService.HintSize="914,7128" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\practicante_inge\OneDrive - MARCO PERUANA SA\VICTOR HUAYAPA\DOCUMENTACIÓN PLANOS ANTIGUOS\PLANOS Y LISTAS DE MATERIALES MP - copia.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="880,6836" sap2010:WorkflowViewState.IdRef="Sequence_60">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="CuentaDiv" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Do SE OBTIENE LA TABLA CON LAS REVISIONES ADICIONALES QUE SE TIENEN QUE ESCRIBIR EN EL EXCEL" sap:VirtualizedContainerService.HintSize="818,736" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="596,130" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[&quot;PARA ARMAR TABLA EXCEL QUE SIRVE PARA COMPARAR LA TABLA ARMADA CON EL PRIMER STRING PDF Y REVISIONES ESCANEDAS TOTALES PDF SE DEMORÓ: &quot;+ TimeTakenRange.TotalSeconds.ToString+&quot; SEG&quot;]" />
+                <ui:SortDataTable ColumnIndex="{x:Null}" ColumnName="{x:Null}" DataColumn="[DTPrimerStringyRevTotalesPDF.Columns(0)]" DataTable="[DTPrimerStringyRevTotalesPDF]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="596,120" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[DTPrimerStringyRevTotalesOrdenPDF]" SortOrder="Ascending" />
+                <ui:OutputDataTable DataTable="[DTPrimerStringyRevTotalesOrdenPDF]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="596,120" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[DTPrimerStringyRevTotalesOrdenPDFsal]" />
+                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="596,130" sap2010:WorkflowViewState.IdRef="WriteLine_15" Text="[DTPrimerStringyRevTotalesOrdenPDFsal]" />
+                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="596,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;EN EL WRITE LINE SE TIENE LA TABLA ORDENADA CON LAS REVISIONES TOTALES ESCANEADAS QUE SE TIENEN QUE ESCRIBIR EN EL EXCEL, RECUERDA QUE EN EL WRITE LINE NO SE VE TODO&quot;]" />
+              </Sequence>
+              <Assign sap:VirtualizedContainerService.HintSize="818,122" sap2010:WorkflowViewState.IdRef="Assign_42">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[CuentaDiv]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="818,122" sap2010:WorkflowViewState.IdRef="Assign_55">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[IndexInicial]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">1441</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[CuentaDiv&lt;2]" DisplayName="While" sap:VirtualizedContainerService.HintSize="818,1989" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="602,1835" sap2010:WorkflowViewState.IdRef="Sequence_79">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_43">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:DateTime">[StartTimeRange]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[CuentaDiv=0]" sap:VirtualizedContainerService.HintSize="540,1149" sap2010:WorkflowViewState.IdRef="If_21">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="506,277" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ReadRangeX DisplayName="Read Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="444,192" sap2010:WorkflowViewState.IdRef="ReadRangeX_4" Range="[Excel.Sheet(&quot;PLANOS Y LISTAS MP&quot;).Range(&quot;B&quot;+(IndexInicial+2).ToString+&quot;:G&quot;+(IndexInicial+1001).ToString)]" SaveTo="[DTSEESCANEOULTIMAREVISION_TODOFILAS]" VisibleOnly="False" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="506,694" sap2010:WorkflowViewState.IdRef="Sequence_80">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="DataTableExcel" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="444,122" sap2010:WorkflowViewState.IdRef="Assign_44">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[LimInferior]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[((CuentaDiv)*1000+2)+IndexInicial]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="444,122" sap2010:WorkflowViewState.IdRef="Assign_45">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[LimSuperior]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[(CuentaDiv)*1000+1001+IndexInicial]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <ueab:ReadRangeX DisplayName="Read Range" HasHeaders="False" sap:VirtualizedContainerService.HintSize="444,209" sap2010:WorkflowViewState.IdRef="ReadRangeX_5" Range="[Excel.Sheet(&quot;PLANOS Y LISTAS MP&quot;).Range(&quot;B&quot;+LimInferior.ToString+&quot;:G&quot;+LimSuperior.ToString)]" SaveTo="[DataTableExcel]" VisibleOnly="False" />
+                          <ui:MergeDataTable Destination="[DTSEESCANEOULTIMAREVISION_TODOFILAS]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="444,156" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[DataTableExcel]" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Assign sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_46">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="s:DateTime">[EndTimeRange]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="540,122" sap2010:WorkflowViewState.IdRef="Assign_47">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:TimeSpan">[TimeTakenRange]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:TimeSpan">[EndTimeRange-StartTimeRange]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="540,130" sap2010:WorkflowViewState.IdRef="WriteLine_26" Text="[&quot;PARA TABLA N°&quot; +(CuentaDiv+1).ToString+&quot; SE DEMORÓ: &quot;+ TimeTakenRange.TotalSeconds.ToString+&quot; SEG Y SU RANGO ES: &quot;+&quot;B&quot;+( ((CuentaDiv)*1000+2)+IndexInicial ).ToString+&quot;:F&quot;+( (CuentaDiv)*1000+1001+IndexInicial ).ToString]" />
+                    <Assign sap:VirtualizedContainerService.HintSize="540,105" sap2010:WorkflowViewState.IdRef="Assign_48">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[CuentaDiv]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[CuentaDiv+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+              </ui:InterruptibleWhile>
+              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="818,130" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="[&quot;PARA ARMAR LA TABLA ARMADA CON EL PRIMER STRING PDF Y REVISIONES TOTALES SE DEMORÓ: &quot;+ (TimeTakenRange.TotalSeconds*CuentaDiv).ToString+ &quot; SEG = &quot;+ (TimeTakenRange.TotalMinutes*CuentaDiv).ToString+&quot; MIN&quot;]" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[CurrentRowIndex]" DataTable="[DTSEESCANEOULTIMAREVISION_TODOFILAS]" DisplayName="For Each Row in Data Table SE ESCRIBE LAS REVISIONES TOTALES EN EL EXCEL" sap:VirtualizedContainerService.HintSize="818,3302" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowExcel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="784,3098" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="722,122" sap2010:WorkflowViewState.IdRef="Assign_49">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:DateTime">[StartTimeExcel]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DTPrimerStringyRevTotalesOrdenPDF]" DisplayName="For Each Row in Data Table SE ESCRIBE LAS REVISIONES TOTALES EN EL EXCEL" sap:VirtualizedContainerService.HintSize="722,2891" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+                        <ui:ForEachRow.Body>
+                          <ActivityAction x:TypeArguments="sd:DataRow">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowDTPrimerStringyRevTotalesPDF" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,2704" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[CurrentRowExcel.Item(0).ToString = &quot;M&quot;]" DisplayName="If EVALUA SI ES PLANO O LISTA, EN BASE A ELLO FORMA LA CADENA A COMPARAR" sap:VirtualizedContainerService.HintSize="626,558" sap2010:WorkflowViewState.IdRef="If_18">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[PlanoOListaFormadoExcel]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["M-MP-"+CurrentRowExcel.Item(1).ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,190" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[PlanoOListaFormadoExcel]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">["MP-"+CurrentRowExcel.Item(1).ToString]</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="626,317" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="Sequence_91">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="WriteLine_27" Text="[&quot;NOS ENCONTRAMOS EN:&quot; +PlanoOListaFormadoExcel]" />
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
+                              <If Condition="[Cint(CurrentRowExcel.Item(1).ToString) &gt;= 2450]" DisplayName="If PLANO O LISTA DE EXCEL A PARTIR DEL CUAL COMIENZA LA ASIGNACIÓN" sap:VirtualizedContainerService.HintSize="626,1744" sap2010:WorkflowViewState.IdRef="If_25">
+                                <If.Then>
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1483" sap2010:WorkflowViewState.IdRef="Sequence_92">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If Condition="[PlanoOListaFormadoExcel=CurrentRowDTPrimerStringyRevTotalesPDF.Item(0).ToString]" sap:VirtualizedContainerService.HintSize="530,1398" sap2010:WorkflowViewState.IdRef="If_16">
+                                      <If.Then>
+                                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,1137" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_50">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="s:DateTime">[EndTimeExcel]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:TimeSpan">[TimeTakenExcel]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:TimeSpan">[EndTimeExcel-StartTimeExcel]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,130" sap2010:WorkflowViewState.IdRef="WriteLine_25" Text="[&quot;PARA G&quot;+( (CurrentRowIndex+2)+ IndexInicial).ToString+&quot; &quot;+CurrentRowExcel.Item(0).ToString+&quot;-MP-&quot;+CurrentRowExcel.Item(1).ToString+&quot; SE ESCRIBIRÁ &quot;+&quot;-&quot;+CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Substring(0,CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Length -1)+ &quot;-&quot;+&quot;, DESDE TOMAR EL NUMERO EXCEL HASTA OBTENER EL STRING CON REVISIONES ESCANEADAS TOTALES A ESCRIBIR EN EXCEL EL TIEMPO NECESARIO FUE: &quot;+TimeTakenExcel.TotalSeconds.ToString+&quot; SEG&quot;]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_52">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="s:DateTime">[StartTimeExcel]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;PLANOS Y LISTAS MP&quot;).Cell(&quot;G&quot;+( (CurrentRowIndex+2)+ IndexInicial).ToString )]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Substring(0,CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Length -1)]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_53">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="s:DateTime">[EndTimeExcel]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <Assign sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Assign_54">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:TimeSpan">[TimeTakenExcel]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:TimeSpan">[EndTimeExcel-StartTimeExcel]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                          <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="WriteLine_24" Text="[&quot;PARA G&quot;+( (CurrentRowIndex+2)+ IndexInicial).ToString+&quot; &quot;+CurrentRowExcel.Item(0).ToString+&quot;-MP-&quot;+CurrentRowExcel.Item(1).ToString+&quot; SE ESCRIBIÓ &quot;+&quot;-&quot;+CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Substring(0,CurrentRowDTPrimerStringyRevTotalesPDF.Item(1).ToString.Length -1)+ &quot;-&quot;+ &quot;, DESDE OBTENER EL VALOR A ESCRIBIR HASTA ESCRIBIR EN EL EXCEL EL TIEMPO NECESARIO FUE: &quot;+TimeTakenExcel.TotalSeconds.ToString+&quot; SEG&quot;]" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_93">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ForEachRow.Body>
+                      </ui:ForEachRow>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+              <Assign sap:VirtualizedContainerService.HintSize="818,121" sap2010:WorkflowViewState.IdRef="Assign_38">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[EndTime2]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="818,121" sap2010:WorkflowViewState.IdRef="Assign_32">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:TimeSpan">[TimeTaken2]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:TimeSpan">[EndTime2-EndTime1]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="818,108" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[TimeTaken2.TotalMinutes.ToString]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

@@ -1,0 +1,572 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="664,3934" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uia="clr-namespace:UiPathTeam.Image.Actions;assembly=ImageActivities" xmlns:uia1="clr-namespace:UiPathTeam.ImagesToPDF.Activities;assembly=UiPathTeam.ImagesToPDF.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPathTeam.Image.Actions</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.PDF.Activities.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>UiPathTeam.ImagesToPDF.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>ImageActivities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPathTeam.ImagesToPDF.Activities</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="674,3869" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FolderPathEntrada" />
+      <Variable x:TypeArguments="x:String" Name="FolderPathContenedorImagen" />
+      <Variable x:TypeArguments="sd2:DataTable" Name="DTTMPNum" />
+      <Variable x:TypeArguments="x:String" Name="FolderPathImagenCropDef" />
+      <Variable x:TypeArguments="x:String" Name="FolderPathSalidaDef" />
+      <Variable x:TypeArguments="x:Int32" Name="CropTop" />
+      <Variable x:TypeArguments="x:Int32" Name="CropLeft" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ListaTituloPrel" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="612,244" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="INGRESA FOLDERPATH CON IMAGENES" Title="INGRESA FOLDERPATH CON IMAGENES">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[FolderPathContenedorImagen]</OutArgument>
+            </ui:InputDialog.Result>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InputDialog>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="612,244" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="INGRESA FOLDERPATH SALIDA DEF" Title="INGRESA FOLDERPATH SALIDA DEF">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[FolderPathSalidaDef]</OutArgument>
+            </ui:InputDialog.Result>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InputDialog>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File EXTRAE TABLA CON TAMAÑO Y NUMERO" sap:VirtualizedContainerService.HintSize="612,57" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="C:\Users\LeunaM\Desktop\PLANOS\PLANOS Y LM MP 2.xlsx">
+      <ueab:ExcelApplicationCard.Body>
+        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,628" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="DTTMPNumTEXT" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,201" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Table(&quot;Tabla2&quot;)]" SaveTo="[DTTMPNum]" />
+            <ui:OutputDataTable DataTable="[DTTMPNum]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="444,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[DTTMPNumTEXT]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="444,122" sap2010:WorkflowViewState.IdRef="WriteLine_9" Text="[&quot;A CONTINUACIÓN SE MUESTRA EL DATA TABLE&quot; +DTTMPNumTEXT]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="444,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;A CONTINUACIÓN SE MUESTRA EL DATA TABLE&quot; +DTTMPNumTEXT]" />
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelApplicationCard>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="612,244" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="576,133" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEachFileX DisplayName="For Each File in Folder GENERA EL PDF ADECUADO PARA EL ARMADO DEL EXCEL DEF" Folder="[FolderPathContenedorImagen]" sap:VirtualizedContainerService.HintSize="514,48" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+            <ui:ForEachFileX.Body>
+              <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                <ActivityAction.Argument1>
+                  <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+                </ActivityAction.Argument1>
+                <ActivityAction.Argument2>
+                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                </ActivityAction.Argument2>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="514,1516" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="Imagenes" />
+                    <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="ObjImageProperties" />
+                    <Variable x:TypeArguments="x:Int32" Name="Index" />
+                    <Variable x:TypeArguments="x:String" Name="TamanhoPlano" />
+                    <Variable x:TypeArguments="x:String" Name="FolderPathImagen" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[FolderPathImagen]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentFile.FullName]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[TamanhoPlano]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[DTTMPNum.Rows(CurrentIndex-1)(0).ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[FolderPathImagenCropDef]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["C:\Users\LeunaM\Desktop\PLANOS\IMAGENES CROP DEF"+"\"+CurrentFile.Name.ToString.Split(".").First+"CropDef.jpg"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,122" sap2010:WorkflowViewState.IdRef="WriteLine_7" Text="[&quot;SE CORTARÁ IMAGEN CUYA DIRECCIÓN ES &quot;+CurrentFile.FullName+ &quot; CUYO TAMAÑO ES -&quot;+TamanhoPlano+&quot;- Y SU NUEVA DIRECCION SERÁ &quot;+FolderPathImagenCropDef]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,264" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;SE CORTARÁ IMAGEN CUYA DIRECCIÓN ES &quot;+CurrentFile.FullName+ &quot; CUYO TAMAÑO ES -&quot;+TamanhoPlano+&quot;- Y SU NUEVA DIRECCION SERÁ &quot;+FolderPathImagenCropDef]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                  <uia:ImageProperties InputImage="{x:Null}" DisplayName="Image properties" sap:VirtualizedContainerService.HintSize="452,133" sap2010:WorkflowViewState.IdRef="ImageProperties_2" ImagePath="[FolderPathImagen]" ImageProps="[ObjImageProperties]" />
+                  <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[TamanhoPlano]" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence x:Key="A" sap:VirtualizedContainerService.HintSize="496,304" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropTop]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">70</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropLeft]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">50</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="B" sap:VirtualizedContainerService.HintSize="496,304" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropTop]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">70</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropLeft]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">60</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="C" sap:VirtualizedContainerService.HintSize="496,304" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropTop]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">80</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropLeft]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">72</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                    <Sequence x:Key="D" sap:VirtualizedContainerService.HintSize="496,304" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropTop]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">80</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_15">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Int32">[CropLeft]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Int32">72</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </Switch>
+                  <If Condition="[Cint(ObjImageProperties.Item(&quot;Height&quot;).ToString)&gt;Cint(ObjImageProperties.Item(&quot;Width&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,277" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uia:ImageSizeCrop InputImage="{x:Null}" ResultImage="{x:Null}" BottomCropp="0" DisplayName="Image size crop" sap:VirtualizedContainerService.HintSize="354,192" sap2010:WorkflowViewState.IdRef="ImageSizeCrop_1" ImagePath="[FolderPathImagen]" LeftCropp="45" ResultImagePath="[FolderPathImagenCropDef]" RightCropp="0" TopCropp="80" Unit="percent" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,277" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uia:ImageSizeCrop InputImage="{x:Null}" ResultImage="{x:Null}" BottomCropp="0" DisplayName="Image size crop" sap:VirtualizedContainerService.HintSize="354,192" sap2010:WorkflowViewState.IdRef="ImageSizeCrop_2" ImagePath="[FolderPathImagen]" LeftCropp="[CropLeft]" ResultImagePath="[FolderPathImagenCropDef]" RightCropp="0" TopCropp="[CropTop]" Unit="percent" />
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="452,122" sap2010:WorkflowViewState.IdRef="WriteLine_8" Text="[&quot;SE CORTÓ IMAGEN CUYA DIRECCIÓN ES &quot;+CurrentFile.FullName+ &quot; CUYO TAMAÑO ES -&quot;+TamanhoPlano+&quot;- Y SUS PARAMETROS A CORTAR FUERON CropTop=&quot;+CropTop.ToString+&quot; CropLeft=&quot; +CropLeft.ToString+&quot;  Y SU NUEVA DIRECCION ES &quot;+FolderPathImagenCropDef]" />
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,295" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;SE CORTÓ IMAGEN CUYA DIRECCIÓN ES &quot;+CurrentFile.FullName+ &quot; CUYO TAMAÑO ES -&quot;+TamanhoPlano+&quot;- Y SUS PARAMETROS A CORTAR FUERON CropTop=&quot;+CropTop.ToString+&quot; CropLeft=&quot; +CropLeft.ToString+&quot;  Y SU NUEVA DIRECCION ES &quot;+FolderPathImagenCropDef]" />
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                  </ui:CommentOut>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachFileX.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEachFileX>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="612,244" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,133" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uia1:ImagesToPDF ImageFile="{x:Null}" DisplayName="Images To PDF" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="ImagesToPDF_1" ImagesFolder="C:\Users\LeunaM\Desktop\PLANOS\IMAGENES CROP DEF" OutputFile="[FolderPathSalidaDef+&quot;\&quot;+&quot;SalidaDef.pdf&quot;]" Overwrite="False">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uia1:ImagesToPDF>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <Sequence DisplayName="OBTIENE EL TITULO Y LO ESCRIBE EN EL EXCEL" sap:VirtualizedContainerService.HintSize="612,2748" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="TextPDF" />
+        <Variable x:TypeArguments="sd2:DataTable" Name="DTTituloPrel" />
+        <Variable x:TypeArguments="x:Int32" Name="CurrentIndex" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,376" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[FolderPathSalidaDef+&quot;\&quot;+&quot;SalidaDef.pdf&quot;]" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="270" Range="All" Text="[TextPDF]">
+              <ui:ReadPDFWithOCR.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathDocumentOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="OqBBdPoFJPUkFu1KKNxZhXXheEO8YYq1xHNuJMhc1wcEpAjh7hLTApPk4sPKJ6mj6Zpl81gdNmMdWlQGd46joQ==" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </ui:ReadPDFWithOCR.OCREngine>
+            </ui:ReadPDFWithOCR>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <Assign sap:VirtualizedContainerService.HintSize="530,114" sap2010:WorkflowViewState.IdRef="Assign_17">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[TextPDF]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String" xml:space="preserve">["95 110 Ø18 ☐ PRELIMINAR 25 MATERIAL: OBRA: V B-B CARBURO DE SILICIO Votorantim Refineria de TAMAÑO: Cajamarquilla NTULO: TRATAMENTO: BOQUILLA DE COLADA 2 EXCEPTO LO INDICADO: DIB: APBO: ACABADO ☐ SUPERFICIAL: ACZ ESCALA: DMENSIONES EN PULGADAS. MEOR EN FL RUD REV: 1:2.5 QUITAR REBABAS, FECHA: ACHAFLAMAR .005 .015m45 EN FLOS 22.12.05 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACOIOES +1/32 0-Silee +/8 H-aals +1/16 2-CECNAUES Ł0 MAS DE H1/4 PERUANA 1 +1/8 S.A. B-MP-4258 3-CECMLES *005 ANCULOS A +T MAS 11/44 DE: ANCULOS +l* ANDUILOS 4T 1 AV. SAENZ PERA N° 1439 CALLAO PERU -A PRELIMINAR OBRA: Votorantim Refineria de Cajamarquilla TITULO: A DIAGRAMA DE FLUJO SECUENCIA DE LLENADO DE MOLDES DIB: APBO: EPM ESCALA: REV: S/E FECHA: 04.01.06 M ARCO PLANO N: REV: HOJA: PERUANA 1 S.A. B-MP-4259 A DE: 2 AV. SAENZ PEÑA N° 1439 CALLAO - PERU23 24 25 OBRA: Votorantim Refineria de Cajamarquilla TTULO: SISTEMA DE COLADA AUTOMATICO UBICACION DIB: APBO: ACZ ESCALA: REV: 1:100 FECHA: 28.12.05 M ARCO PLANO N: REV: HOJA: PERUANA 1 S.A. B-MP-4260 A DE: 1 AV. SAENZ PERA N° 1439 CALLAO PERU -A A ^ rNELIMINNAN M12 012 8.8 M12x55mm S.K.F SN 207 TC MC MASTER CARR 60645K761 OBRA: Votorantim Refineria MC MASTER CARR de 60645K741 TT15 Cajamarquilla DH 5LZ BN 040 TITULO: TT10 EL 5LZ BN 240 ENSAMBLE GENERAL DIB: APBO: ACZ ESCALA: REV: 1:10 FECHA: 28.12.05 M ARCO PLANO N° REV: HOJA: PERUANA 1 S.A. C-MP-4261 Material A Especificación DE: 1 AV. SAENZ PERA N° 1439 CALLAO - PERUPRELIMINAR OBRA: Votorantim Refineria de Cajamarquilla TTULO: SISTEMA DE POTENCIA Y CONTROL DIB: APBO: EPM ESCALA: REV: S/E FECHA: 09.03.06 M ARCO PLANO N: REV: HOJA: PERUANA 1 S.A. B-MP-4264 A DE: 1 AV. SAENZ PERA N° 1439 CALLAO PERU -OBRA: TTULO: EN LOGO PULGADAS DIB: APBO: EPM ACZ ESCALA: REV: 1/1 FECHA: 18.01.05 M ARCO PLANO N: REV: HOJA: PERUANA 1 S.A. A-MP-4266 A DE: 1 AV. SAENZ PERA N° 1439 CALLAO - PERU8 1 TAPA A-36 P 3/16x16 x14 1/2 7 1 TAPA A-36 PL3/16x17 3/4x14 1/2 6 2 PATA A-36 L2x2x5/16x10 1/4 5 2 PATA A-36 L2x2x5/16x12 4 1 BAFFLE A-36 PL1/8x16 1/4x17 7/16 3 1 PLANCHA A-36 PL3/16 2 1 TAPA A-36 PL1/4x15x18 Pza N° Parte Cant. Descripción Material Especificación MATERIAL: OBRA: TAMAÑO: TITULO: TRATAMIENTO: TANQUE HIDRAULICO DE 15 Gal. EXCEPTO LO INDICADO: DIB: APBO: ACABADO ☐ SUPERFICAL: ACZ ESCALA: DMENSIONES EN PULCADAS. NO MODR EN EL DIBUO REV: 3/32 QUITAR REBABAS, FECHA: ACHARLANAR .005/.015x45 EN FLOS 23.03.05 TOLERANCIA DIMENSIONAL M ARCO MAQUNADO SOLDADO PLANO N: FUNDIDO REV: HOJA: PRACCIONES: 11/32 0-Joles +1/8 (-2pug +1/16 2-CECMLES: +.0 MAS E3pies +1/4 PERUANA 1 12-2pulg +1/8 S.A. B-MP-4267 3-CECMALES: +.005 ANCULOS A +2 +1/4 DE: ANCULOS + ANCLOS +T 1 AV. SAENZ PEÑA N° 1439 CALLAO - PERUPL 1/8 14 P9r 3 3 1 1 MATERIAL: OBRA: ACERO LAREDO TAMAÑO: TTULO: TRATAMENTO: ANQUE HIDRAULICO DE 110 GALONES EXCEPTO LO INDICADO: DIB: APBO: ACABADO ☐ SUPERFICIAL: EPM ESCALA: DMENSIONES EN PULGADAS. NOMENR EN Fl DRUD REV: 1/10 QUITAR REBABAS, FECHA: ACHAFUANAR .005/015.45 EN FLOS 12.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACCOES 11/32 0-Joilee +1/8 0-l2ae 41/16 2-0E0 Ł0 MUS H1/ PERUANA 1 S.A. A-MP-4268 ¿ 3-0E0 w20 *.005 ANCULOS A +7 NAS DE: NNCULOS +l 1 AV. SAENZ PERA N° 1439 CALLAO - PERUD MATERIAL: OBRA: ANTINIT KWB W-3040 TAMAÑO: TITULO: TRATAMIENTO: ,, PIN 01/2 2 X EXCEPTO LO INDICADO: XXX DIB: APBO: ACABADO SUPERFICIAL: EPM ☒ ESCALA: DMENSIONES EN PULGADAS. NO IMEDRENLLOIRLD REV: 2/1 QUITAR REBABAS, FECHA: ACHAPLANAR .005/.015w5* EN PLOS 18.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADD PLANO N: RUNDIOO REV: HOJA: PRACCOES: 11/32 0-3bles 11/8 0-t2ue 11/16 2-DECMES +.01 MAS DE PERUANA +1/4 1 12-2eug S.A. +1/8 A-MP-4269 3-CECMALES £.005 AMGULOS: A 17 MASDE2ule 11/4 DE: ANCULOS £r ANCULOS 4T 1 AV. SAENZ PEÑA N° 1439 CALLAO - PERUD MATERIAL: OBRA: ANTINIT KWB W-3040 TAMAÑO: TITULO: TRATAMIENTO: PIN ☐ Ø 1/2 2 X 1/2 XCEPTO LO INDICADO: XXX DIB: APBO: ACABADO SUPERFICIAL: EPM ☒ ESCALA: DMENSIONES EN PULGADAS. NO IMEDRENLLOIRLD REV: 2/1 QUITAR REBABAS, FECHA: ACHAPLANAR .005/.015w5* EN PLOS 18.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADD PLANO N: RUNDIOO REV: HOJA: PRACCOES: 11/32 0-3bles 11/8 0-t2ue 11/16 2-DECMES +.01 MAS DE PERUANA +1/4 1 12-2eug S.A. 11/8 A-MP-4270 3-CECMALES £.005 AMGULOS: A 17 MASDE2ule 11/4 DE: ANCULOS £r ANCULOS 4T 1 AV. SAENZ PEÑA N° 1439 CALLAO - PERUOBRA: Votorantim Refineria de Cajamarquilla TITULO: UNIDAD HIDRAULICA DIB: APBO: ACZ ESCALA: REV: 1/16 FECHA: Is 18/03/06 M ARCO PLANO N: 0 REV: HOJA: 11/18 PERUANA 1 +1/8 S.A. A-MP-4271 A :11/4 DE: +2 1 AV. SAENZ PERA N° 1439 CALLAO - PERUO I Ferno Exagonal Ur -NCXI 7 2 Arandela Plana Gr 5 01/4 6 2 Tuerca Exagonal Gr 5 01/4 -NC 5 1 Guiador A-36 PLT 1/4 'x1x85mm. 4 1 Aislante Ceramico alta para tension 3 1 Abrazadera A-36 Indicadas 2 1 Barra Redonda A-36 01/4 180mm X 1 1 Platina A-36 PLT 1/4x1x 227mm. Pza N° Parte Cant Descripción Material Especificación MATERIAL: OBRA: Votorantim Refineria de TAMAÑO: Cajamarquilla NTULO: SENSOR DE NIVEL TRATAMENTO: ENSAMBLE EXCEPTO LO INDICADO: DIB: APBO: ACABADO ☐ SUPERFICIAL: EPM ESCALA: DMENSIONES EN PULGADAS. MEOR EN FL RUD REV: 1:2 QUITAR REBABAS, FECHA: ACHAFLAMAR .005 .015m45 EN FLOS 03.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACOIOES +1/32 0-Silee +/8 H-aals 41/16 2-CECNAUES Ł0 MAS DE H1/4 PERUANA 1 +1/8 S.A. B-MP-4272 3-CECMLES £005 ANCULOS A +T MAS 11/44 DE: ANCULOS +l* ANDUILOS 4T 2 AV. SAENZ PERA N° 1439 CALLAO PERU -MATERIAL: OBRA: ACERO WGR-600 TAMAÑO: TITULO: 01 1X TRATAMIENTO: COPLA ROSCADA 1/8 NPT EXCEPTO LO INDICADO: XXX DIB: APBO: ACABADO SUPERFICIAL: EPM ☒ ESCALA: DMENSIONES EN PULGADAS. NO IMEDRENLLOIRLD REV: 2/1 QUITAR REBABAS, FECHA: ACHAPLANAR .005/.015w5* EN PLOS 23.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADD PLANO N: RUNDIOO REV: HOJA: PRACCOES: 11/32 0-3bles 11/8 0-t2ue 11/16 2-DECMES +.01 MAS DE PERUANA +1/4 1 12-2eug S.A. 11/8 A-MP-4273 3-CECMALES £.005 AMGULOS A 17 MASDE2ule 11/4 DE: ANCULOS £r ANCULOS 4T 1 AV. SAENZ PEÑA N° 1439 CALLAO - PERUMATERIAL: OBRA: ANTINIT KWB W-3040 TAMAÑO: TITULO: ,, TRATAMIENTO: PIN 01/4  1 X 1/2EXCEPTO LO INDICADO: XXX DIB: APBO: ACABADO SUPERFICIAL: EPM ☒ ESCALA: DMENSIONES EN PULGADAS. NO IMEDRENLLOIRLD REV: 2/1 QUITAR REBABAS, FECHA: ACHAPLANAR .005/.015w5* EN PLOS 25.05.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADD PLANO N: RUNDIOO REV: HOJA: PRACCOES: 11/32 0-3bles 11/8 0-t2ue 11/16 2-DECMES +.01 MAS DE PERUANA +1/4 1 12-2eug S.A. +1/8 A-MP-4274 3-CECMALES £.005 AMGULOS: A 17 MASDE2ule 11/4 DE: ANCULOS £r ANCULOS 4T 1 AV. SAENZ PEÑA N° 1439 CALLAO - PERUOBRA SISTEMA ,, DOBLE HALADOR ☐ 38 ☐ TITULO DIMENSIONES Y ESPECIFICACIONES TECNICAS DIB. APBO. I.VILLANUEVA ESCALA REV. FECHA 07/02/97 M ARCO PL.NO. REV HOJA B-MP-3584 1 PERUANA A DE 1SIM REVISION POR FECHA B SE AGREGÓ MECANIZADO DE GRASERAS ACZ 22.11.06 C1 SE AGREGO MECANIZADO PARA MOTOR SAI J.A.P 30.05.13 C2 AGREGÓ SE DIA. REF. PARA MOTOR SAI J.A.P 30.05.13 4 AWW 6 145° 140° VISTA C-C DETALLE DE BITAS \: AGUJEROS DE GRASERAS DEBEN HACERSE EN EN FTAPA FN TODAS AS ROCAMASAS A AS MEDIDAS6 1 PLANCHA A-572 GR50 PL 1/4 31 X 3/8 42 x 1/2 5 1 PLANCHA A-572 GR50 PL 3/8 44 X 1/2 14 X 1/2 4 1 PLANCHA A-572 GR50 PL 1/4 42 X 1/4 X 12 3/8 3 B-MP-4288 1 PLANCHA LAT. PROA A-572 GR50 2 B-MP-4289 1 PLANCHA INT. PROA A-572 GR50 1 B-MP-4290 1 PLANCHA LAT. POPA A-572 GR50 Pza N° Parte Cant. Descripción Material Especificación MATERIAL: OBRA: WS-180 TAMAÑO: TITULO: CASCO TRATAMENTO: FABRICACION EXCEPTO LO INDICADO: DIB: APBO: ACABADO ☒ SUPERACIL: ACZ ESCALA: DMENSIOMES EN PLLGADAS. NO NETIR NRIUN REV: 3/32 OUITAR REBABAS, FECHA: ACHARANAR .005/0015w45 EN FLOS 25/07 TOLERANCIA /06 DIMENSIONAL M ARCO MAOUINADO SOLDADO PLANO N¿ RUNDIDO REV: HOJA: FRACCOIPE 11/22 0-3lee H11 C-ig:1/6 2-OECBNALRS +0 MAS H1/4 PERUANA 1 S.A. C-MP-4278 ¿ 3-BECMNALES +.005 ANGROS D +T DE: INCHORF 3 AV. SAENZ PERA N° 1439 CALLAO - PERULES MATERIAL: OBRA: ASTM A572-01 GRADO 50 WS-180 TAMAÑO: NTULO: 70 TRATAMENTO: CARRETE FABRICACION - PULIR A MANO SI SE REQUIERE EXCEPTO LO INDICADO: DIB: APBO: ACABADO R.CONTRERAS ☐ SUPERFICIAL: ESCALA: DMENSIONES EN PULGADAS. MEOR EN FL RUD REV: 3/16 QUITAR REBABAS, FECHA: ACHAFLAMAR .005 .015m45 EN FLOS 21.07.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACOIOES +1/32 0-Silee +/8 H-aals +1/16 2-CECNAUES Ł0 MAS DE H1/4 PERUANA 1 +1/8 S.A. B-MP-4279 3-CECMLES *005 ANCULOS C +T MAS 11/44 DE: ANCULOS +l* ANDUILOS 4T 3 AV. SAENZ PERA N° 1439 CALLAO PERU -LES MATERIAL: OBRA: ASTM A572-01 GRADO 50 WS-180 TAMAÑO: NTULO: 70 TRATAMENTO: CARRETE FABRICACION - PULIR A MANO SI SE REQUIERE EXCEPTO LO INDICADO: DIB: APBO: ACABADO R.CONTRERAS ☐ SUPERFICIAL: ESCALA: DMENSIONES EN PULGADAS. MEOR EN FL RUD REV: 3/16 QUITAR REBABAS, FECHA: ACHAFLAMAR .005 .015m45 EN FLOS 21.07.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACOIOES +1/32 0-Silee +/8 H-aals +1/16 2-CECNAUES Ł0 MAS DE H1/4 PERUANA 1 +1/8 S.A. B-MP-4280 3-CECMLES *005 ANCULOS C +T MAS 11/44 DE: ANCULOS +l* ANDUILOS 4T 3 AV. SAENZ PERA N° 1439 CALLAO PERU -LES MATERIAL: OBRA: ASTM A572-01 GRADO 50 WS-180 TAMAÑO: NTULO: 70 TRATAMENTO: CARRETE FABRICACION - PULIR A MANO SI SE REQUIERE EXCEPTO LO INDICADO: DIB: APBO: ACABADO R.CONTRERAS ☐ SUPERFICIAL: ESCALA: DMENSIONES EN PULGADAS. MEOR EN FL RUD REV: 3/16 QUITAR REBABAS, FECHA: ACHAFLAMAR .005 .015m45 EN FLOS 21.07.06 TOLERANCIA DIMENSIONAL M ARCO MAQUINADO SOLDADO PLANO N: FUNDIDO REV: HOJA: FRACOIOES +1/32 0-Silee +/8 H-aals +1/16 2-CECNAUES Ł0 MAS DE H1/4 PERUANA 1 +1/8 S.A. B-MP-4281 3-CECMLES *005 ANCULOS C +T MAS 11/44 DE: ANCULOS +l* ANDUILOS 4T 3 AV. SAENZ PERA N° 1439 CALLAO PERU -LAS UNIONES T EN T DEBERÁN SOLDARSE CON CORDONES .71 CONTINUOS POR AMBOS LADOS. LA DIMENSIÓN DE LA GARGANTA DE LA SOLDADURA DEBERÁ SER IGUAL A LA MITAD DEL ESPESOR DEL .5T ELEMENTO MAS DELGADO. CUANDO LOS ELEMENTOS A SOLDAR SE UNEN CON CIERTO ÁNGULO, LA ABERT..."]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="530,122" sap2010:WorkflowViewState.IdRef="WriteLine_10" Text="[TextPDF]" />
+      <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(?&lt;=TITULO:)\s*(.{1,45})" DisplayName="Find Matching Patterns" sap:VirtualizedContainerService.HintSize="530,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[TextPDF]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Avanzado&quot;,&quot;OperationValue&quot;:&quot;(?&lt;=TITULO:)\\s*(.{1,45})&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactamente&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(?&lt;=TITULO:)\s*(.{1,45})" RegexOption="IgnoreCase, Compiled" Result="[ListaTituloPrel]" />
+      <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="[CurrentIndex]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="530,610" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ListaTituloPrel]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="str:Match">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="str:Match" Name="currentMatch" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,414" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="variable1" />
+                <Variable x:TypeArguments="x:Int32" Name="Numero" />
+                <Variable x:TypeArguments="x:String" Name="tamanho" />
+                <Variable x:TypeArguments="x:String" Name="TituloPrel" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[TituloPrel]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[ListaTituloPrel(CurrentIndex).ToString]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:UpdateRowItem ColumnName="{x:Null}" ColumnIndex="2" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="434,215" sap2010:WorkflowViewState.IdRef="UpdateRowItem_1" Row="[DTTMPNum.Rows(CurrentIndex)]" Value="[TituloPrel]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="530,307" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,196" sap2010:WorkflowViewState.IdRef="Sequence_22">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[FolderPathSalidaDef+&quot;\&quot;+&quot;SalidaDef.pdf&quot;]" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1016" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="C:\Users\LeunaM\Desktop\PLANOS\PLANOS Y LM MP 2.xlsx">
+        <ueab:ExcelApplicationCard.Body>
+          <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,724" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Int32" Name="NroFilas" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:FindFirstLastDataRowX FirstRowIndex="{x:Null}" BlankRowsToSkip="1" ColumnName="TAMAÑO DEL PLANO" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Find First/Last Data Row" FirstRowOffset="0" HasHeaders="True" sap:VirtualizedContainerService.HintSize="434,340" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_1" LastRowIndex="[NroFilas]" LastRowOffset="0" Range="[Excel.Table(&quot;Tabla2&quot;)]" VisibleRowsOnly="False" />
+              <ueab:WriteRangeX Destination="[Excel.Table(&quot;Tabla2&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[DTTMPNum]" />
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;FAVOR VERIFICAR Y CORREGIR COLUMNAS&quot;]" />
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelApplicationCard.Body>
+      </ueab:ExcelApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
