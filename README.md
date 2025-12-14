@@ -44,3 +44,10 @@ The automation is composed of modular UiPath processes executed sequentially:
 - Enabled scalable handling of thousands of scanned pages.
 - Ensured consistent naming, revision control, and folder structure across projects.
 - Eliminated recurrent manual classification and metadata errors.
+
+---
+
+## Applications
+- Digitization of legacy engineering drawings and Bills of Materials
+- Maintenance and fabrication documentation
+- Industrial archives with scanned or handwritten technical records
